@@ -2,7 +2,9 @@ package effets;
 
 import bandeau.Bandeau;
 
-public class Effet2{
+import java.awt.*;
+
+public class Effet2 extends Effet {
     private double rotation;
     private String mot;
 
@@ -11,12 +13,11 @@ public class Effet2{
         this.mot = "Bonjour";
     }
 
-    public void afficheEffet2(Bandeau bandeau) {
-        String variableMot="";
-        for (int i = 0; i < mot.length(); i++) {
-            bandeau.setRotation(rotation + 5 * i);
-            variableMot= variableMot + String.valueOf(mot.charAt(i));
-            bandeau.setMessage(variableMot);
+    public void afficheEffet(Bandeau bandeau) {
+        bandeau.setBackground(Color.getHSBColor(101, 120, 180));
+        for (int i = 0; i < mot.length()+2; i++) {
+            bandeau.setRotation(rotation*50*i);
+            bandeau.setMessage(mot);
             bandeau.sleep(1000 - 100 * i);
         }
     }

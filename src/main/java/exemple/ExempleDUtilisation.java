@@ -3,6 +3,8 @@ package exemple;
 import bandeau.Bandeau;
 import effets.Effet1;
 import effets.Effet2;
+import effets.Effet3;
+import effets.Effet4;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -61,11 +63,15 @@ public class ExempleDUtilisation {
          monBandeau.setMessage("Terminé");
          monBandeau.sleep(3000);
          monBandeau.close();**/
-        Bandeau bandeau1= new Bandeau();
+       /** Bandeau bandeau1= new Bandeau();
         Effet1 effet1 = new Effet1();
         effet1.afficheEffet1(bandeau1);
         Effet2 effet2 = new Effet2();
         effet2.afficheEffet2(bandeau1);
-        bandeau1.close();
+        Effet3 effet3 = new Effet3();
+        effet3.afficheEffect3(bandeau1);
+        Effet4 effet4=new Effet4();
+        effet4.afficheEffet4(bandeau1);
+        bandeau1.close();**/
     }
 }
