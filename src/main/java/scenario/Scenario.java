@@ -2,10 +2,7 @@ package scenario;
 
 import bandeau.Bandeau;
 import effets.*;
-import exemple.ExempleDUtilisation;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class Scenario {
     private ArrayList<Effet> effets;
